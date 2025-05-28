@@ -1,3 +1,10 @@
+:root {
+  --color-dark: #1f2937;
+  --blue-bg: #3882f6;
+  --color-light: #e5e7eb;
+  --font-color-light: #f9faf8;
+}
+
 /* Box sizing rules */
 *,
 *::before,
@@ -18,17 +25,15 @@ figure, blockquote, dl, dd {
   margin-block-end: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
-}
-
 /* Set core body defaults */
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -73,3 +78,92 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+/* Layout */
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  color: var(--font-color-light);
+  width: 1000px;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  gap: 8px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.site-width  {
+  width: 100vw;
+}
+
+#logo {
+  font-weight: 900;
+  font-size: 24px;
+  align-self: center;
+}
+
+.dark-bg {
+  background-color: var(--color-dark);
+}
+
+.light-bg {
+  background-color: var(--color-light);
+}
+
+.hero {
+  display: flex;
+  width: 1000px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  height: 450px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero p, .hero h1 {
+  color: var(--font-color-light);
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.col-1 {
+  width: 100%;
+}
+
+.col-2 {
+  width: 100%;
+}
+
+.col-2 img {
+  width: 100%;
+}
+
+.btn {
+  padding: 10px 25px;
+  border-radius: 10px;
+  background-color: var(--blue-bg);
+  color: var(--font-color-light);
+  font-weight: 900;
+}
