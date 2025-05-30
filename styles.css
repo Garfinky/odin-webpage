@@ -30,9 +30,7 @@ body {
   font-family: 'Roboto', sans-serif;
   min-height: 100vh;
   line-height: 1.5;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display:block;
   margin: 0;
 }
 
@@ -83,6 +81,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 nav {
@@ -105,10 +105,6 @@ a {
 
 ul {
   list-style: none;
-}
-
-.site-width  {
-  width: 100vw;
 }
 
 #logo {
@@ -139,6 +135,12 @@ h1 {
   font-weight: 900;
 }
 
+h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--color-dark);
+}
+
 .hero p, .hero h1 {
   color: var(--font-color-light);
 }
@@ -166,4 +168,23 @@ h1 {
   background-color: var(--blue-bg);
   color: var(--font-color-light);
   font-weight: 900;
+}
+
+.four-col {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 0px;
+}
+
+.square {
+  width: 100%;
+  padding-top: 100%;
+  border: 2px solid var(--blue-bg);
+  border-radius: 10px;
+}
+
+.margin-btm {
+  margin-bottom: 40px;
 }
