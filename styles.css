@@ -81,8 +81,8 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 nav {
@@ -115,6 +115,7 @@ ul {
 
 .dark-bg {
   background-color: var(--color-dark);
+  padding-top: 1rem;
 }
 
 .light-bg {
@@ -139,6 +140,13 @@ h2 {
   font-size: 36px;
   font-weight: 900;
   color: var(--color-dark);
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--font-color-light);
+  margin-top: 0;
 }
 
 .hero p, .hero h1 {
@@ -187,4 +195,66 @@ h2 {
 
 .margin-btm {
   margin-bottom: 40px;
+}
+
+.site-width {
+  width: 1000px;
+}
+
+.quote {
+  background-color: var(--color-light);
+}
+
+.quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 200;
+}
+
+.quote-auth {
+  font-size: 24px;
+  font-weight: 800;
+  text-align: right;
+  color: var(--color-dark)
+}
+
+.cta {
+  display: flex;
+  width: 1000px;
+  align-items: center;
+  background-color: var(--blue-bg);
+  padding: 2rem;
+  border-radius: 0.8rem;
+}
+
+.cta p {
+  font-size: 18px;
+  color: var(--font-color-light);
+  margin-top: 0;
+}
+
+.cta a {
+  padding: 0.5rem 2rem;
+  border: 2px solid var(--color-light);
+  border-radius: 0.8rem;
+  color: var(--font-color-light);
+  font-weight: 900;
+}
+
+.col-1-cta {
+  width: 75%;
+}
+
+.col-2-cta {
+  justify-content: right;
+  width: 20%;
+}
+
+footer {
+  display: flex;
+  background-color: var(--color-dark);
+  color: var(--font-color-light);
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
